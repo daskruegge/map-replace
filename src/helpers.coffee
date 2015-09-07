@@ -41,6 +41,9 @@ mapReplace = (string, map, options={})->
 		regex = RegExp(options.match, "g" + (options.flags ? ""))
 
 	for searchString, replacement of map
+	    if options.prefix
+	      replacement = replacement.replace(RegExp(escapeRegex(options.prefix), "g"), "")
+		
 		replace = (string)->
 			string.replace(RegExp(escapeRegex(searchString), "g"), replacement)
 

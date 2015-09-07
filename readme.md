@@ -24,10 +24,11 @@ $ map-replace --help
 
   Options:
 
-    -h, --help           output usage information
-    -V, --version        output the version number
-    -m, --match <regex>  Only replace in substrings that match <regex>
-    -f, --flags <flags>  Regex flags (g is implied)
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -m, --match <regex>    Only replace in substrings that match <regex>
+    -f, --flags <flags>    Regex flags (g is implied)
+    -p, --prefix <prefix>  Prefix to ignore on replacing
 
 Takes a map of search strings to replacements from stdin and applies that to each
 provided file.

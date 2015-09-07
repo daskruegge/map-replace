@@ -29,6 +29,7 @@ module.exports = (process)->
 		.usage("[options] <files>")
 		.option("-m, --match <regex>", "Only replace in substrings that match <regex>")
 		.option("-f, --flags <flags>", "Regex flags (g is implied)")
+		.option("-p, --prefix <prefix>", "Prefix to ignore on replacing")
 
 	program.on "--help", ->
 		console.log """
